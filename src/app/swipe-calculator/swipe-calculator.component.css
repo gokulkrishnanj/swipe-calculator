@@ -1,35 +1,67 @@
-.swipe-calculator-body{
-    background-color: #000000;
+.swipe-calculator-body {
+    background-color: #000;
     margin: 0;
     min-height: 100vh;
 }
 
-.swipe-calculator-header{
-    padding: 15px 20px;
-}
-
-.swipe-calculator-header{
+.swipe-calculator-header {
     display: flex;
-    flex-direction: row;;
-    justify-content:space-between;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 24px 48px;
 }
 
-.app-details-header, .system-info-header{
-    margin: 0px 20px;
+.app-details-header {
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
-.system-info-header{
+.system-info-header {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 12px 16px;
     border: 2px solid orangered;
     border-radius: 20px;
 }
 
-.swipe-calculator-header h1{
+.swipe-calculator-header h1 {
+    margin: 0 0 8px;
+    color: #fff;
     font-family: monospace;
+    font-size: 2rem;
+}
+
+.swipe-calculator-header h4 {
+    margin: 0;
+    color: #646262;
+    font-family: monospace;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.swipe-calculator-content {
+    padding: 0 48px;
     color: #fff;
 }
 
-.swipe-calculator-header h4{
-        font-family: monospace;
-    color: #646262;
-    font-weight: 0;
+@media (max-width: 600px) {
+    .swipe-calculator-header {
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px 16px;
+    }
+
+    .swipe-calculator-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .system-info-header {
+        align-self: stretch;
+    }
+
+    .swipe-calculator-content {
+        padding: 0 16px;
+    }
 }
