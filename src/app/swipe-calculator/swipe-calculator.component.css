@@ -1,7 +1,35 @@
 .swipe-calculator-body{
     background-color: #000000;
+    margin: 0;
+    min-height: 100vh;
 }
 
-.swipe-calculator-body h1{
-    color: #ffffff;
+.swipe-calculator-header{
+    padding: 15px 20px;
+}
+
+.swipe-calculator-header{
+    display: flex;
+    flex-direction: row;;
+    justify-content:space-between;
+}
+
+.app-details-header, .system-info-header{
+    margin: 0px 20px;
+}
+
+.system-info-header{
+    border: 2px solid orangered;
+    border-radius: 20px;
+}
+
+.swipe-calculator-header h1{
+    font-family: monospace;
+    color: #fff;
+}
+
+.swipe-calculator-header h4{
+        font-family: monospace;
+    color: #646262;
+    font-weight: 0;
 }
