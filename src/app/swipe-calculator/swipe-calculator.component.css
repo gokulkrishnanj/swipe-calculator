@@ -4,6 +4,22 @@
     min-height: 100vh;
 }
 
+.system-time{
+    color: #b8b6b6;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+mat-icon {
+    color: #b8b6b6;
+}
+
+.system-date-and-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .swipe-calculator-header {
     display: flex;
     justify-content: space-between;
@@ -28,6 +44,7 @@
 .swipe-calculator-header h1 {
     margin: 0 0 8px;
     color: #fff;
+    font-weight: bold;
     font-family: monospace;
     font-size: 2rem;
 }
