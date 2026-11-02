@@ -5,8 +5,17 @@
 }
 
 .system-time{
+    font-size: 130%;
     color: #b8b6b6;
     font-weight: bold;
+    font-family: monospace;
+}
+
+.system-time-display{
+    margin-top: 5px;
+    color: orangered;
+    font-weight: bold;
+    
     font-family: monospace;
 }
 
@@ -14,23 +23,29 @@ mat-icon {
     color: #b8b6b6;
 }
 
+.system-date {
+    color: #b8b6b6;
+}
+
 .system-date-and-time{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .swipe-calculator-header {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     gap: 24px;
     padding: 24px 48px;
+    margin-left: 40px;
+    margin-right: 20px;
 }
 
 .app-details-header {
     flex: 1 1 auto;
     min-width: 0;
+    margin-top: 10px;
 }
 
 .system-info-header {
@@ -39,6 +54,8 @@ mat-icon {
     padding: 12px 16px;
     border: 2px solid orangered;
     border-radius: 20px;
+    margin-top: 10px;
+
 }
 
 .swipe-calculator-header h1 {
