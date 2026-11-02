@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { SwipeCalculatorComponent } from './swipe-calculator/swipe-calculator.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import {CommonModule, DatePipe} from "@angular/common";
+import { TimeconversionPipe } from './timeconversion.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SwipeCalculatorComponent
+    SwipeCalculatorComponent,
+    TimeconversionPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

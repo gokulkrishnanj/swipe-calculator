@@ -5,32 +5,54 @@
 }
 
 .system-time{
+    margin: 10px;
+    font-size: 130%;
     color: #b8b6b6;
     font-weight: bold;
     font-family: monospace;
+}
+
+.system-time-display{
+    margin-top: 5px;
+    color: orangered;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 170%;
 }
 
 mat-icon {
     color: #b8b6b6;
 }
 
+.system-date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+    color: #b8b6b6;
+}
+
 .system-date-and-time{
     display: flex;
+    gap: 10px;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 0px 10px;
 }
 
 .swipe-calculator-header {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     gap: 24px;
     padding: 24px 48px;
+    margin-left: 40px;
+    margin-right: 20px;
 }
 
 .app-details-header {
     flex: 1 1 auto;
     min-width: 0;
+    margin-top: 10px;
 }
 
 .system-info-header {
@@ -39,6 +61,7 @@ mat-icon {
     padding: 12px 16px;
     border: 2px solid orangered;
     border-radius: 20px;
+
 }
 
 .swipe-calculator-header h1 {
@@ -48,6 +71,11 @@ mat-icon {
     font-family: monospace;
     font-size: 2rem;
 }
+
+/* .swipe-calculator-header h1::hover {
+    color: orangered;
+} */
+
 
 .swipe-calculator-header h4 {
     margin: 0;

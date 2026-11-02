@@ -16,11 +16,13 @@
                 SYSTEM TIME
             </div>
             <div class="system-date-and-time">
-                <div class="system-time">
-                    <mat-icon>schedule</mat-icon>
+                <div class="system-time-display">
+                    <!-- <mat-icon>schedule</mat-icon> -->
+                    <span>{{ currentDateTime | date:'HH:mm:ss' }}</span>
                 </div>
                 <div class="system-date">
                     <mat-icon>calendar_today</mat-icon>
+                    <span>{{ currentDateTime | date:'dd MMM yyyy' }}</span>
                 </div>
             </div>
         </div>
