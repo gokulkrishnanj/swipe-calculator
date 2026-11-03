@@ -1,9 +1,11 @@
+
 name: Deploy Angular to GitHub Pages
 
 on:
   push:
     branches:
       - master
+      - main
   workflow_dispatch:
 
 permissions:
@@ -23,6 +25,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Display deployment information
+        run: |
+          echo "Branch: $GITHUB_REF_NAME"
+          echo "Commit: $(git log -1 --oneline)"
+          echo "Angular component:"
+          cat src/app/app.component.html
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -34,6 +43,12 @@ jobs:
 
       - name: Build Angular application
         run: npm run build -- --base-href "/swipe-calculator/"
+
+      - name: Verify build output
+        run: |
+          echo "Checking Angular build output..."
+          test -f dist/swipe-calculator/index.html
+          ls -lah dist/swipe-calculator/
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
