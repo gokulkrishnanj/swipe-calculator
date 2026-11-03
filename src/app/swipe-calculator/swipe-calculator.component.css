@@ -91,6 +91,7 @@ mat-icon {
     color: #fff;
 }
 
+
 @media (max-width: 600px) {
     .swipe-calculator-header {
         flex-direction: column;
