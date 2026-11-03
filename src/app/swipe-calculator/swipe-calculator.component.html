@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swipe Calculator</title>
-</head>
-<body class="swipe-calculator-body">
-    <div class="swipe-calculator-header">
+<main class="swipe-calculator-body">
+    <header class="swipe-calculator-header">
         <div class="app-details-header">
             <h1>Swipe Calculator</h1>
             <h4>Paste your door-swipe records. Swipes alternate: 1st is in, 2nd is out, 3rd is in, and so on.</h4>
@@ -17,7 +10,6 @@
             </div>
             <div class="system-date-and-time">
                 <div class="system-time-display">
-                    <!-- <mat-icon>schedule</mat-icon> -->
                     <span>{{ currentDateTime | date:'HH:mm:ss' }}</span>
                 </div>
                 <div class="system-date">
@@ -26,14 +18,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class = "swipe-calculator-content">
-        <!-- <div class="swipe-entry-container">
-        </div>
-        <div class="swipe-details-container">
-        </div> -->
-    </div>
-    <div class="swipe-calculator-footer">
-        </div>
-</body>
-</html>
+    </header>
+    <section class="swipe-calculator-content"></section>
+</main>
