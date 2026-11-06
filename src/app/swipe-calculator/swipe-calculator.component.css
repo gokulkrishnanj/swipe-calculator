@@ -7,9 +7,66 @@
 }
 
 .swipe-calculator-header,
-.swipe-calculator-content {
+.swipe-calculator-content,
+.swipe-calculation-main-body-container {
     width: min(100%, 1200px);
     margin: 0 auto;
+}
+
+.swipe-records-deatils-input h3 {
+    color: #fff;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 10px;
+}
+
+.swipe-calculation-results-container{
+    color: #fff;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.input-text-area{
+    width: 90%;
+    height: 350px;
+    min-height: 200px;
+    resize: vertical;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 12px 12px;
+    padding: 12px;
+    background-color: #000;
+    color: white;
+}
+
+textarea:focus {
+    outline: none;
+    border: 2px solid orangered;
+}
+
+textarea:hover{
+    cursor: pointer;
+}
+
+.swipe-records-deatils-input, .swipe-calculation-results-container{
+    border: 2px solid rgb(36, 35, 35);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.swipe-records-deatils-input{
+    width: 30%;
+    max-width: 600%;
+}
+
+
+.swipe-calculation-main-body-container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .swipe-calculator-header {
