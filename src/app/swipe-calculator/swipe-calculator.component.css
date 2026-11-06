@@ -17,7 +17,31 @@
     color: #fff;
     font-weight: bold;
     font-family: monospace;
+    /* background-color: #171f27; */
     padding: 10px;
+}
+
+#target-hours-input{
+    font-weight: bold;
+    margin: 15px 0px;
+    font-family: monospace;
+    color: #fff;
+    margin-left: 10px;
+}
+
+input {
+    border: 2px solid rgb(36, 35, 35);
+    border-radius: 10px;
+    height: 30px;
+    margin: 10px 0px;
+    margin-left: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid orangered;
 }
 
 .swipe-calculation-results-container{
@@ -145,6 +169,11 @@ textarea:hover{
     color: #b8b6b6;
 }
 
+.swipe-calculation-buttons-container mat-icon {
+    flex: 0 0 auto;
+    color: #000
+}
+
 .swipe-calculator-content {
     flex: 1 0 auto;
     padding-top: clamp(24px, 5vw, 48px);
@@ -173,4 +202,19 @@ textarea:hover{
         flex-direction: column;
         gap: 4px;
     }
+}
+
+.swipe-calculation-buttons-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.swipe-calculation-buttons-container button{
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    background-color: orangered;
+    outline: none;
 }
