@@ -7,9 +7,100 @@
 }
 
 .swipe-calculator-header,
-.swipe-calculator-content {
+.swipe-calculator-content,
+.swipe-calculation-main-body-container {
     width: min(100%, 1200px);
     margin: 0 auto;
+}
+
+.swipe-records-deatils-input h3 {
+    color: #fff;
+    font-weight: bold;
+    font-family: monospace;
+    /* background-color: #171f27; */
+    padding: 10px;
+}
+
+#target-hours-input{
+    font-weight: bold;
+    margin: 15px 0px;
+    font-family: monospace;
+    color: #fff;
+    margin-left: 10px;
+}
+
+input {
+    border: 2px solid rgb(36, 35, 35);
+    border-radius: 10px;
+    height: 30px;
+    margin: 10px 0px;
+    margin-left: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+#info-button{
+    border: 2px solid rgb(36, 35, 35);
+    border-radius: 10px;
+    height: 30px;
+    margin: 10px 0px;
+    margin-left: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid orangered;
+}
+
+.swipe-calculation-results-container{
+    color: #fff;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.input-text-area{
+    width: 90%;
+    height: 350px;
+    min-height: 200px;
+    resize: vertical;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 12px 12px;
+    padding: 12px;
+    background-color: #000;
+    color: white;
+}
+
+textarea:focus {
+    outline: none;
+    border: 2px solid orangered;
+}
+
+textarea:hover{
+    cursor: pointer;
+}
+
+.swipe-records-deatils-input, .swipe-calculation-results-container{
+    border: 2px solid rgb(36, 35, 35);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.swipe-records-deatils-input{
+    width: 30%;
+    max-width: 600%;
+}
+
+
+.swipe-calculation-main-body-container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .swipe-calculator-header {
@@ -88,6 +179,11 @@
     color: #b8b6b6;
 }
 
+.swipe-calculation-buttons-container mat-icon {
+    flex: 0 0 auto;
+    color: #000
+}
+
 .swipe-calculator-content {
     flex: 1 0 auto;
     padding-top: clamp(24px, 5vw, 48px);
@@ -116,4 +212,19 @@
         flex-direction: column;
         gap: 4px;
     }
+}
+
+.swipe-calculation-buttons-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.swipe-calculation-buttons-container button{
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    background-color: orangered;
+    outline: none;
 }
