@@ -18,7 +18,8 @@
     font-weight: bold;
     font-family: monospace;
     /* background-color: #171f27; */
-    padding: 10px;
+    margin: 0 0 12px;
+    padding: 0;
 }
 
 #target-hours-input{
@@ -26,15 +27,14 @@
     margin: 15px 0px;
     font-family: monospace;
     color: #fff;
-    margin-left: 10px;
 }
 
 input {
+    box-sizing: border-box;
     border: 2px solid rgb(36, 35, 35);
     border-radius: 10px;
     height: 30px;
     margin: 10px 0px;
-    margin-left: 10px;
     background-color: #000;
     color: #fff;
 }
@@ -61,14 +61,15 @@ input:focus {
 }
 
 .input-text-area{
-    width: 90%;
+    box-sizing: border-box;
+    width: 100%;
     height: 350px;
     min-height: 200px;
     resize: vertical;
     display: block;
-    box-sizing: border-box;
+    border: 2px solid rgb(36, 35, 35);
     border-radius: 20px;
-    margin: 12px 12px;
+    margin: 12px 0;
     padding: 12px;
     background-color: #000;
     color: white;
@@ -99,7 +100,7 @@ textarea:hover{
     margin-top: 30px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -196,6 +197,16 @@ textarea:hover{
         gap: 20px;
     }
 
+    .swipe-calculation-main-body-container {
+        flex-direction: column;
+    }
+
+    .swipe-records-deatils-input {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+    }
+
     .app-details-header {
         padding-top: 0;
     }
@@ -218,13 +229,31 @@ textarea:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 12px;
+    width: 100%;
+}
+
+.swipe-calculation-buttons-container > div{
+    flex: 1 1 0;
 }
 
 .swipe-calculation-buttons-container button{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    min-height: 40px;
+    border: 2px solid orangered;
     border-radius: 10px;
     font-weight: bold;
     font-family: monospace;
     background-color: orangered;
+    color: #000;
     outline: none;
+}
+
+.swipe-calculation-buttons-container mat-icon{
+    margin: 0;
 }
